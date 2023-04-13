@@ -4,8 +4,7 @@ Un simple y opinionado repositorio de ejemplo para comenzar un servidor de API's
 
 ## Hecho con
 
-- Fastify
-- Strict Typescript support
+- Fastify 
 - Soporte estricto de Typescript
 - Testeo mediante [Jest](https://jestjs.io/)
 - Lectura de la API en directorio via [fastify-autoload](https://github.com/fastify/fastify-autoload)

@@ -1,0 +1,42 @@
+{
+  "name": "fastify-swagger-myqsl-example",
+  "version": "0.0.1",
+  "description": "Fastify + SwaggerUI + MySQL example",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --log-error --files ./src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "NODE_ENV=production node dist/server.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "gabrieladrianmezar",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/autoload": "^5.7.1",
+    "@fastify/swagger": "^8.3.1",
+    "@fastify/swagger-ui": "^1.5.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.14.1",
+    "kysely": "^0.24.2",
+    "mysql2": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.1",
+    "@typescript-eslint/parser": "^5.54.1",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.5.0",
+    "json-schema-to-ts": "^2.7.2",
+    "kysely-codegen": "^0.10.0",
+    "pino-pretty": "^9.4.0",
+    "prettier": "^2.8.4",
+    "ts-jest": "^29.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.9.5"
+  }
+}

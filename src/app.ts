@@ -18,8 +18,9 @@ const build = (opts: buildOpts = {}): FastifyInstance => {
     app.register(fastifySwagger, {
       swagger: {
         info: {
-          title: "Fastify + Swagger Ejemplo",
-          description: "Aquí se encuentra la documentación de las API",
+          title: "Fastify + Swagger + MySQL",
+          description:
+            "Aquí se encuentra la documentación de las API de ejemplo",
           version: "0.0.1",
         },
         externalDocs: {

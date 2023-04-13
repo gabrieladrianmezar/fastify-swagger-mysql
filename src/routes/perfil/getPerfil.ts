@@ -85,9 +85,9 @@ async function getPerfil(perfilId: number): Promise<Perfil | null> {
 async function testConnectionMysql2() {
   try {
     const [result] = await pool.execute("SELECT 1");
-    console.log("mysql2 query result:", result);
+    console.log("mysql2 resultado de la consulta de prueba:", result);
   } catch (error) {
-    console.error("mysql2 query error:", error);
+    console.error("mysql2 error en la consulta:", error);
   }
 }
 
@@ -116,9 +116,9 @@ export default async function routes(fastify: FastifyInstance) {
       const perfilId = parseInt(request.params.perfilId, 10);
 
       try {
-        console.log("Before executing query");
+        console.log("Antes de ejecutar consulta");
         const perfil = await getPerfil(perfilId);
-        console.log("After executing query");
+        console.log("Luego de ejecutar consulta");
 
         if (perfil) {
           response.status(200).send(perfil);

@@ -30,5 +30,5 @@ app.listen(8000, "127.0.0.1", (err, address) => {
     console.error(err);
     process.exit(1);
   }
-  console.log(`Server listening at ${address}`);
+  console.log(`Servidor escuchando en ${address}`);
 });
